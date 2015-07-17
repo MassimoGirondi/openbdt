@@ -42,11 +42,15 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 
 -Iscriversi al servizio ReCaptcha e ottenere le chiavi per il proprio sito
 
--Ripristinare il database e impostare nel file comuni/config.php tutti i parametri di connessione e d'ambiente.
+-Ripristinare il database (documenti/openbdt.sql)
 
--Modificare il file helpmail.html con la propria mail per la richiesta di informazioni e/o aiuto(all'interno del file è presente un link per generare il file online)
+-Modificare e rinominare i file ESEMPIO.helpmail.html e comuni/ESEMPIO.config.php, che dovranno diventare, rispettivamente, helpmail.html e config.php
 
--Modificare il logo e la favicon(nella cartella principale e nella cartella comuni) con quelle della propria banca del tempo
+-Modificare il logo e la favicon(nella cartella principale e nella cartella comuni) con quelle della propria banca del tempo, rinominandole favicon.ico e logo.png. Sono presenti 2 immagini d'esempio, se si vogliono utilizzare vanno rinominate togliendo "ESEMPIO." davanti a ogni file.
+
+-Caricare il regolamento in pdf, rinominato in regolamento.pdf, all'interno della cartella documenti
+
+-Al termine della procedura tutti i file che iniziano con "ESEMPIO" devono essere eliminati e sostituiti dall'equivalente senza "ESEMPIO.".
 
 -Accedere con le credenziali di default, 
 
@@ -55,6 +59,7 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 	PASSWORD: password
 
 -Modificare le password dell'amministratore e creare i vari utenti
+-Modificare i dati degli utenti di test attraverso PHPMyAdmin o equivalenti
 
 -I 3 utenti predefiniti non vanno eliminati!!!!
 
