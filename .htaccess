@@ -1,0 +1,27 @@
+<Files "config.php">
+Order Allow,Deny
+Deny from All
+</Files>
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+#previene esplorazione cartelle
+Options All -Indexes
+
+#blocca visualizzazione dei dump del db
+<FilesMatch ".(sql.gz)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch ".(php~)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+
+
+ErrorDocument 404 /404.html
+RewriteEngine off
+ErrorDocument 401 default
+
