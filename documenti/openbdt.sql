@@ -192,7 +192,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `login`, `nome`, `cognome`, `mail`, `cellulare`, `password`, `data_rinnovo`, `tassa`, `priv`, `cf`) VALUES
 (-1, 'Eliminato', 'Utente', 'Rimosso', 'eliminato@eliminato.el', '123456', '123456', '2014-11-12', 0, -1, 'CodiceFiscale123'),
-(1, 'banca', 'Banca del tempo', 'Nome Paese', 'bdt@bdt.org', '1234', '81dc9bdb52d04dc20036dbd83131234', '2014-09-26', 0, -1, 'CodiceFiscale123'),
+(1, 'banca', 'Banca del tempo', 'Nome Paese', 'bdt@bdt.org', '1234', 'passworddellabanca', '2014-09-26', 0, -1, 'CodiceFiscale123'),
 (2, 'admin', 'Admin', 'Admin', 'admin@bdt.org', '123123123', '5f4dcc3b5aa765d61d8327deb882cf99', '2014-09-27', 0, 2, 'CodiceFiscale123');
 
 --
