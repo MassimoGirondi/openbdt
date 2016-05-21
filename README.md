@@ -46,11 +46,11 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 
 -Ripristinare il database (documenti/openbdt.sql)
 
--Modificare e rinominare i file ESEMPIO.helpmail.html e comuni/ESEMPIO.config.php, che dovranno diventare, rispettivamente, helpmail.html e config.php
+-Modificare e rinominare i file ESEMPIO.helpmail.html e comuni/ESEMPIO.config.php, che dovranno diventare, rispettivamente, helpmail.html e config.php (nel file helpmail è presente un link per generarlo, dopo aver inserito la mail che deve essere visualizzata nel sito per la richiesta di informazioni nei 2 campi premere 'Cloak it', quindi sostituire tutto il contenuto del file con ciò che è presente nel box a fondo pagina).
 
 -Modificare il logo e la favicon(nella cartella principale e nella cartella comuni) con quelle della propria banca del tempo, rinominandole favicon.ico e logo.png. Sono presenti 2 immagini d'esempio, se si vogliono utilizzare vanno rinominate togliendo "ESEMPIO." davanti a ogni file.
 
--Caricare il regolamento in pdf, rinominato in regolamento.pdf, all'interno della cartella documenti
+-Caricare il proprio regolamento in pdf, rinominato in regolamento.pdf, all'interno della cartella documenti
 
 -Al termine della procedura tutti i file che iniziano con "ESEMPIO" devono essere eliminati e sostituiti dall'equivalente senza "ESEMPIO.".
 
