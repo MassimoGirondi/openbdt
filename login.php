@@ -75,6 +75,7 @@
               
       </div>
        &nbsp;Se neccessario puoi chiedere aiuto a <?php include "./helpmail.html"; ?>.
+       <br/><br/>&nbsp;Sito realizzato con <a href="http://github.com/maxgiro96/openbdt"> OpenBdT</a>
 
                <!-- <h6>Questo sito necessita che nel tuo browser sia attivato javascript!(se non sai cosa sia puoi pure ignorare questo messaggio)</h6>
              --> 
