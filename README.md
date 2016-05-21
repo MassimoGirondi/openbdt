@@ -1,5 +1,5 @@
-# openbdt
-Copyright (C) 2014-2015 Massimo Girondi massimo@girondi.net
+# Openbdt
+Copyright (C) 2014-2016 Massimo Girondi massimo@girondi.net
 
 
 OpenBdT-Software gestionale per banche del tempo
