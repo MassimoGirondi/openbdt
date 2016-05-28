@@ -53,25 +53,39 @@ else
 <FORM action="" method="POST" >
 	<P>
 <LABEL for="user">Utente: </LABEL>
-<SELECT name="user" <?=$mod?"disabled":""?>>
+<SELECT class="browser-default" name="user" <?=$mod?"disabled":""?>>
     <?php print_utenti_selected($uid);?>
 </SELECT>
 <br/>             
 <LABEL for="cat">Categoria: </LABEL>
-<SELECT name="cat" id="cat" onchange="check_abilita_altro()">
+<select class="browser-default"  name="cat" id="cat" onchange="check_abilita_altro()">
     <?php printCategorie_selected($c,$s);?>
 </SELECT>
 <br/> 
 <LABEL for="note">Note/descrizione:</LABEL>
-<TEXTAREA name="note" id="note" maxlength="150"><?php echo $note;?></TEXTAREA>
+<TEXTAREA name="note" class="materialize-textarea"  id="note" maxlength="150"><?php echo $note;?></TEXTAREA>
 <?php
 /*
 <?=$mod?"<input name=user type=hidden value=$uid":""?>*/
 ?>
 <input name=id type=hidden value=<?=$id_abi?>>
 <input name=mod type=hidden value=<?=$mod?$mod:-100?>><br/>
+
+ <div class="row">
+        
+    <button class="btn waves-effect waves-light" type="submit" name="cmd" value="Conferma">Conferma
+    <i class="mdi-content-send right"></i>
+    </button>
+    
+    <button class="btn waves-effect waves-light" type="reset" name="cmd" value="Reset">Reset
+    </button>
+    </div>
+
+
+<?php /*
 <input name="cmd" type="submit" value="Conferma" />
 <input name="cmd" type="reset" value="Reset" />
+*/?>
 </P>
 </FORM>
 

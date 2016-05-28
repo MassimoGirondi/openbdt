@@ -14,15 +14,23 @@ if(isset($_REQUEST['el']))
     
 else
 {
-    ?><input type="button" value="Inserisci nuova abilit&agrave;" onclick="document.location='mod_abilita.php'"/><br/><?php
+    ?>
+
+     <div class="row">
+       <button class="btn waves-effect waves-light" type="reset" name="cmd" value="Inserisci nuova abilit&agrave;" onclick="document.location='mod_abilita.php'" />Inserisci nuova abilit&agrave;
+            <i class="mdi-content-add right"></i>
+        </button>
+    </div>
+
+    <?php
     $intest=array("Utente","Categoria","sub Categoria","Note","Azioni");
     $dim=array("10%","15%","20%","30%","25%");
     $abi= abilitas_cassiere();
     $righe=array();
     while($r=  mysql_fetch_row($abi))
 {
-        $azioni="<input type=\"button\" value=\"Elimina\" onclick=\"conferma('Sicuro di voler eliminare l\'abilit&agrave;?','tutte_abilita.php?el=$r[4]')\" />
-                <input type=\"button\" value=\"Modifica\" onclick=\"document.location='mod_abilita.php?mod=$r[4]'\" />";
+        $azioni="<button value=\"Elimina\" class=\"btn waves-effect waves-light\" onclick=\"conferma('Sicuro di voler eliminare l\'abilit&agrave;?','tutte_abilita.php?el=$r[4]')\">Elimina</button>&nbsp;
+                <button value=\"Elimina\" class=\"btn waves-effect waves-light\" onclick=\"document.location='mod_abilita.php?mod=$r[4]'\" >Modifica</button>";
         $righe[]=array($r[0], $r[1], $r[2], $r[3], $azioni );
 
 }
