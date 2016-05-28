@@ -112,8 +112,8 @@ function login_fix($nome,$cognome)
 function elimina($id)//utente
 {	$sql="DELETE FROM users WHERE id = '$id'";
 	mysql_safe_query($sql);
-        $sql="DELETE FROM annunci WHERE user_id = '$id'";
-        mysql_safe_query($sql);
+       // $sql="DELETE FROM annunci WHERE user_id = '$id'";
+       // mysql_safe_query($sql);
         $sql = "UPDATE `scambi` SET `fornitore`=-1 WHERE fornitore=$id";
         mysql_safe_query($sql);
         $sql = "UPDATE `scambi` SET `cliente`=-1 WHERE cliente=$id";
