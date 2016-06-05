@@ -1,4 +1,4 @@
-Copyright (C) 2014-2015 Massimo Girondi
+Copyright (C) 2014-2016 Massimo Girondi
 OpenBdT-Software gestionale per banche del tempo
 
 Questo  programma e' software libero; e' lecito redistribuirlo e/o
@@ -36,6 +36,7 @@ REQUISITI per l'installazione:
 -SMTP Server autenticato (non necessariamente quello del proprio hosting,anche gmail o altro provider, può rendersi necessaria qualche modifica alla funzione di invio mail(mailer_new) nella libreria(comuni/lib.php))
 
 INSTALLAZIONE:
+(Istruzioni più precise nella pagina di github o nel file README.md)
 
 -Iscriversi al servizio ReCaptcha e ottenere le chiavi per il proprio sito
 -Ripristinare il database e impostare nel file comuni/config.php tutti i parametri di connessione e d'ambiente.

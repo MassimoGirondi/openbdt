@@ -66,7 +66,7 @@ dbconnect();
                         <li><a href="../admin/elenco.php">Gestione utenti</a></li>
                         <?php //<li><a href="../admin/massiva.php">Approva utenti</a></li> ?>
                         <li><a href="../admin/agg_utente.php" >Aggiungi utente</a></li>
-                        <li><a href="../bkp_db/backup.php?msg" class='last'>BACKUP DATABASE</a></li>
+                        <li><a href="../bkp_db/backup.php?msg&key=<?php echo $chiave_bkp?>" class='last'>BACKUP DATABASE</a></li>
                     </ul>
                 </li>
                 <?php } ?>

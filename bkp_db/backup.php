@@ -1,6 +1,9 @@
 <?php
 require("../comuni/lib.php");
 require("./mysql_backup.php");
+
+if(isset($_REQUEST["key"]) && mysql_escape_string($_REQUEST["key"])==$chiave_bkp)
+{
 dbconnect();
 
 $backup_obj = new MySQL_Backup();
@@ -19,3 +22,6 @@ if(isset($_REQUEST["msg"]))
     header('refresh: 5; url=../index.php');
     
 }
+}
+else
+	echo "Error! Pagina sbagliata";

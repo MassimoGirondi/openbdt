@@ -36,7 +36,7 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 #REQUISITI per l'installazione:
 -database MySQL >= 5.0 (consigliato almeno 5.4, potrebbe funzionare anche con versioni più vecchie ma successive alla 4.1)
 
--PHP >=5.4
+-PHP >=5.4 ma inferiore a 7 (presenza di funzioni mysql non supportate)
 
 -SMTP Server autenticato (non necessariamente quello del proprio hosting,anche gmail o altro provider, può rendersi necessaria qualche modifica alla funzione di invio mail(mailer_new) nella libreria(comuni/lib.php))
 
@@ -65,3 +65,8 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 
 -I 3 utenti predefiniti non vanno eliminati!!!!
 
+La pagina categorie_public.php visualizza un elenco di tutte le abilità disponibili sulla piattaforma senza necessità di essere loggati(non viene mostrato nessun dato personale), è pensata per essere integrata in un sito esterno o su una pagina Facebook.
+
+Il sito prevede anche un sistema di "tasse", quando il credito di un utente supera le 10 ore verrà tassato di un'ora ogni 5, ore che andranno all'utente  della Banca del Tempo. I paramentri sono impostabili nel file config.php.
+Il nome dell'account della Banca del tempo può essere modificato con PHPMyAdmin o direttamente nel file .sql da importare.
+Il backup del database può essere automatizzato mediante la chiamata con un cronjob della pagina openbdt/bkp_db/backup.php?msg&key=chiavesegreta, la chiave può essere impostata all'interno del file config.php, senza il parametro msg la pagina in caso di esito positivo non darà nessun output. 
