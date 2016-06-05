@@ -22,7 +22,7 @@ Nel caso di modifiche importanti o un eventuali fork del progetto sarebbe gradit
 Questo software è stato sviluppato per l'uso interno nelle banche del tempo,
 in particolare per la Banca del Tempo di Isola Vicentina(VI).
 
-Il software è stato creato da zero, eventuali parti di codice copiate 
+Il software è stato creato da zero, eventuali parti di codice copiate
 e/o a cui l'autore si è ispirato sono da ritenersi rilasciate sotto la propria licenza,
 in ogni caso i contenuti sono stati trovati sul web e/o su siti di dominio pubblico.
 
@@ -54,7 +54,7 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 
 -Al termine della procedura tutti i file che iniziano con "ESEMPIO" devono essere eliminati e sostituiti dall'equivalente senza "ESEMPIO.".
 
--Accedere con le credenziali di default, 
+-Accedere con le credenziali di default,
 
 	USER: admin
 
@@ -65,8 +65,17 @@ Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti r
 
 -I 3 utenti predefiniti non vanno eliminati!!!!
 
+#NOTE AGGIUNTIVE
+
 La pagina categorie_public.php visualizza un elenco di tutte le abilità disponibili sulla piattaforma senza necessità di essere loggati(non viene mostrato nessun dato personale), è pensata per essere integrata in un sito esterno o su una pagina Facebook.
 
-Il sito prevede anche un sistema di "tasse", quando il credito di un utente supera le 10 ore verrà tassato di un'ora ogni 5, ore che andranno all'utente  della Banca del Tempo. I paramentri sono impostabili nel file config.php.
+Il sito prevede anche un sistema di "tasse", quando il credito di un utente supera le 10 ore verrà tassato di un'ora ogni 5, ore che andranno all'utente  della Banca del Tempo.
+I paramentri sono impostabili nel file config.php.
+
 Il nome dell'account della Banca del tempo può essere modificato con PHPMyAdmin o direttamente nel file .sql da importare.
-Il backup del database può essere automatizzato mediante la chiamata con un cronjob della pagina openbdt/bkp_db/backup.php?msg&key=chiavesegreta, la chiave può essere impostata all'interno del file config.php, senza il parametro msg la pagina in caso di esito positivo non darà nessun output. 
+
+Il backup del database può essere automatizzato mediante la chiamata con un cronjob della pagina:
+
+ 		openbdt/bkp_db/backup.php?msg&key=chiavesegreta
+
+La chiave può essere impostata all'interno del file config.php, senza il parametro msg la pagina in caso di esito positivo non darà nessun output.
