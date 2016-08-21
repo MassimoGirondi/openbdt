@@ -1,4 +1,8 @@
 <?php
+
+//Togliere il comment per abilitare la segnalazione degli errori
+//error_reporting(E_ALL);
+
 global $home;
 $nomebdt = 'NOME BDT';
 $home = "http://www.bdt.org/openbdt";

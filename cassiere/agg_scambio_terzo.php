@@ -19,11 +19,11 @@ if (isset($_REQUEST['cmd']) && ($_REQUEST['cmd'] == "Conferma"))
 		$ore=$_REQUEST['ore'];
 		$data=$_REQUEST['data'];
 		$descrizione=trim($_REQUEST['descrizione']);
-                $c=split("\.",mysql_real_escape_string($_REQUEST['cat']));
-                $cat=$c[0];
-                $sub=$c[1];
-                $explain=explain_cat($cat, $sub) ;
-                $descrizione= $explain[0]."-".$explain[1]."  ---  ".$descrizione;
+    $c=split("\.",mysql_real_escape_string($_REQUEST['cat']));
+    $cat=$c[0];
+    $sub=$c[1];
+    $explain=explain_cat($cat, $sub) ;
+    $descrizione= $explain[0]."-".$explain[1]."  ---  ".$descrizione;
 	
 	$id=agg_scambio($fornitore,$cliente,$ore,$data,$descrizione);
 	if(isset($_REQUEST['conferma']))
@@ -92,7 +92,7 @@ mysql_data_seek($utenti, 0);
     </div>
     <div class="row">
       <div class="input-field col s12">
-        <textarea id="descrizione" class="materialize-textarea" maxlength="250" required="true" ></textarea>
+        <textarea id="descrizione" name="descrizione" class="materialize-textarea" maxlength="250" required="true" ></textarea>
         <label for="descrizione">Descrizione</label>
       </div>
     </div>
