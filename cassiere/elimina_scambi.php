@@ -1,21 +1,24 @@
 <?
 if (isset($_REQUEST['cmd']) && ($_REQUEST['cmd'] == "Conferma")) {
-//eliminazione
-require("../comuni/lib.php");
-autentica(CASSIERE);
-$titolo="Eliminazione scambi";
-require("../comuni/header.php");
-$scambi1=$_REQUEST['scambi'];
-$scambi=explode(',', $scambi1);
-foreach($scambi as &$x) 
-		{echo $x;
-		elimina_scambio($x);}
+	//eliminazione
+	require("../comuni/lib.php");
+	autentica(CASSIERE);
+	$titolo="Eliminazione scambi";
+	require("../comuni/header.php");
+	$scambi1=$_REQUEST['scambi'];
+	$scambi=explode(',', $scambi1);
+	foreach($scambi as &$x) 
+			{echo $x;
+			elimina_scambio($x);}
+
 	header('Location: ./conferma_scambi.php' );	
 }
 
+var_dump($scambi);
 ?>
 <FORM action="elimina_scambi.php" method="POST" >
 Sicuro di voler eliminare i seuenti scambi? Questa operazione non può essere annullata!
+
 <table>
 	<tr>
 		<td>Fornitore</td>
@@ -25,7 +28,7 @@ Sicuro di voler eliminare i seuenti scambi? Questa operazione non può essere an
 		<td>Descrizione</td>
 	</tr>
 
-<?	
+<?
 		foreach($scambi as &$x) {
 		$s=mysql_fetch_row(ottieni_scambio($x));
 		
