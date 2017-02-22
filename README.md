@@ -16,8 +16,6 @@ veda la Licenza Pubblica Generica GNU per maggiori dettagli.
 Questo programma deve essere distribuito assieme ad una copia della
 Licenza Pubblica Generica GNU.
 
-Sarebbe corretto, da parte di chi utilizza il software o lo modifica e lo ripubblica  citare l'autore e le fonti del software al di là degli obblighi previsti nella GNU GPL.
-Nel caso di modifiche importanti o un eventuali fork del progetto sarebbe gradito informarne l'autore.
 
 Questo software è stato sviluppato per l'uso interno nelle banche del tempo,
 in particolare per la Banca del Tempo di Isola Vicentina(VI).
