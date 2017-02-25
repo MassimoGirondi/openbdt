@@ -181,8 +181,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `cellulare` varchar(15) NOT NULL,
   `password` varchar(40) NOT NULL,
   `data_rinnovo` date NOT NULL,
-  `tassa` int(15) NOT NULL,
-  `priv` int(11) NOT NULL,
+  `tassa` int(15) NOT NULL DEFAULT 0,
+  `priv` int(11) NOT NULL DEFAULT -1,
   `cf` varchar(20) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
