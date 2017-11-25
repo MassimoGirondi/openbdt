@@ -31,39 +31,39 @@ Sviluppato con interamente con prodotti opensource e/o gratuiti.
 Grafica basata su MaterializeCSS, un framework OpenSource rilasciato sotto licenza MIT, tutti i diritti relativi a http://materializecss.com/
 Invio mail basato su PHPMailer, rilasciato sotto licenza LGPL, tutti i diritti relativi alla libreria ai rispettivi proprietari.
 
-#REQUISITI per l'installazione:
--database MySQL >= 5.0 (consigliato almeno 5.4, potrebbe funzionare anche con versioni più vecchie ma successive alla 4.1)
+# REQUISITI per l'installazione:
+- database MySQL >= 5.0 (consigliato almeno 5.4, potrebbe funzionare anche con versioni più vecchie ma successive alla 4.1)
 
--PHP >=5.4 ma inferiore a 7 (presenza di funzioni mysql non supportate)
+- PHP >=5.4 ma inferiore a 7 (presenza di funzioni mysql non supportate)
 
--SMTP Server autenticato (non necessariamente quello del proprio hosting,anche gmail o altro provider, può rendersi necessaria qualche modifica alla funzione di invio mail(mailer_new) nella libreria(comuni/lib.php))
+- SMTP Server autenticato (non necessariamente quello del proprio hosting,anche gmail o altro provider, può rendersi necessaria qualche modifica alla funzione di invio mail(mailer_new) nella libreria(comuni/lib.php))
 
-#INSTALLAZIONE:
+# INSTALLAZIONE:
 
--Iscriversi al servizio ReCaptcha e ottenere le chiavi per il proprio sito
+- Iscriversi al servizio ReCaptcha e ottenere le chiavi per il proprio sito
 
--Ripristinare il database (documenti/openbdt.sql)
+- Ripristinare il database (documenti/openbdt.sql)
 
--Modificare e rinominare i file ESEMPIO.helpmail.html e comuni/ESEMPIO.config.php, che dovranno diventare, rispettivamente, helpmail.html e config.php (nel file helpmail è presente un link per generarlo, dopo aver inserito la mail che deve essere visualizzata nel sito per la richiesta di informazioni nei 2 campi premere 'Cloak it', quindi sostituire tutto il contenuto del file con ciò che è presente nel box a fondo pagina).
+- Modificare e rinominare i file ESEMPIO.helpmail.html e comuni/ESEMPIO.config.php, che dovranno diventare, rispettivamente, helpmail.html e config.php (nel file helpmail è presente un link per generarlo, dopo aver inserito la mail che deve essere visualizzata nel sito per la richiesta di informazioni nei 2 campi premere 'Cloak it', quindi sostituire tutto il contenuto del file con ciò che è presente nel box a fondo pagina).
 
--Modificare il logo e la favicon(nella cartella principale e nella cartella comuni) con quelle della propria banca del tempo, rinominandole favicon.ico e logo.png. Sono presenti 2 immagini d'esempio, se si vogliono utilizzare vanno rinominate togliendo "ESEMPIO." davanti a ogni file.
+- Modificare il logo e la favicon(nella cartella principale e nella cartella comuni) con quelle della propria banca del tempo, rinominandole favicon.ico e logo.png. Sono presenti 2 immagini d'esempio, se si vogliono utilizzare vanno rinominate togliendo "ESEMPIO." davanti a ogni file.
 
--Caricare il proprio regolamento in pdf, rinominato in regolamento.pdf, all'interno della cartella documenti
+- Caricare il proprio regolamento in pdf, rinominato in regolamento.pdf, all'interno della cartella documenti
 
--Al termine della procedura tutti i file che iniziano con "ESEMPIO" devono essere eliminati e sostituiti dall'equivalente senza "ESEMPIO.".
+- Al termine della procedura tutti i file che iniziano con "ESEMPIO" devono essere eliminati e sostituiti dall'equivalente senza "ESEMPIO.".
 
--Accedere con le credenziali di default,
-
+- Accedere con le credenziali di default,
+```
 	USER: admin
 
 	PASSWORD: password
+```
+- Modificare le password dell'amministratore e creare i vari utenti
+- Modificare i dati degli utenti di test attraverso PHPMyAdmin o equivalenti
 
--Modificare le password dell'amministratore e creare i vari utenti
--Modificare i dati degli utenti di test attraverso PHPMyAdmin o equivalenti
+- I 3 utenti predefiniti non vanno eliminati!!!!
 
--I 3 utenti predefiniti non vanno eliminati!!!!
-
-#NOTE AGGIUNTIVE
+# NOTE AGGIUNTIVE
 
 La pagina categorie_public.php visualizza un elenco di tutte le abilità disponibili sulla piattaforma senza necessità di essere loggati(non viene mostrato nessun dato personale), è pensata per essere integrata in un sito esterno o su una pagina Facebook.
 
